@@ -12,5 +12,6 @@ Rails.application.routes.draw do
    delete "/logout", to: "sessions#destroy"
    get "/profile", to: "users#me"
    get "/learning", to: "languages#languages"
-
+   get "/uncompleted/:id", to: "flashcards#uncompleted"
+   get "/next/:id", to: "flashcards#next"
 end

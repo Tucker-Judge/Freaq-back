@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :authorize, except: :create
+    skip_before_action :authorize, only: :create
 
     # comment out b4 deployment
     def index

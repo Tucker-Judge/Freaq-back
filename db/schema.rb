@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_27_151342) do
     t.jsonb "cover_info"
     t.string "front"
     t.jsonb "back"
+    t.boolean "completed", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
